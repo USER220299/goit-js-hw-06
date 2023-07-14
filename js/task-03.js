@@ -14,15 +14,41 @@ const images = [
 ];
 
 
-const ulEl = document.querySelector('ul')
+const ulEl = document.querySelector('ul');
 
-images.forEach(({url,alt}, i, images) => {
-  const liEl = document.createElement('li');
-  const imgEl = document.createElement('img');
-  imgEl.src = url;
-  imgEl.alt = alt;
-  console.log(liEl);
+
+// images.forEach(({url,alt}, i, images) => {
+//   const liEl = document.createElement('li');
+//   const imgEl = document.createElement('img');
+//   imgEl.src = url;
+//   imgEl.alt = alt;
+//   console.log(liEl);
   
-  liEl.appendChild(imgEl);
-  ulEl.appendChild(liEl);
-})
+//   liEl.appendChild(imgEl);
+//   ulEl.appendChild(liEl);
+// })
+
+
+const item = images.map(({ url, alt }) => {
+  return `<li><img src = ${url}, alt = ${alt}> </li>`
+ 
+}
+);
+
+  
+  
+
+
+ulEl.insertAdjacentHTML('afterbegin', item);
+ulEl.style.display = "flex";
+ulEl.style.flexDirection = "row";
+
+// const item = images.map(image => {
+//   return (imgEl.alt = image.alt);
+  
+ 
+// }
+
+// )
+console.log(item)
+
