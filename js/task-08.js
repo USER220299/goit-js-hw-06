@@ -21,6 +21,7 @@ function onFormSubmit(event ) {
 
     }
   
+    const reset = form.reset();
     
   
 }

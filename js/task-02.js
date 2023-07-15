@@ -8,7 +8,6 @@ const ingredients = [
 ];
 
 
-
 const ulEl = document.querySelector('ul')
 
 ingredients.forEach((ingredient) => {

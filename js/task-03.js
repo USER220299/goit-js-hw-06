@@ -15,6 +15,22 @@ const images = [
 
 
 const ulEl = document.querySelector('ul');
+ulEl.style.display = "flex";
+ulEl.style.gap = "50px";
+
+const item = images.map(({ url, alt }) => {
+  return `<li><img src = "${url}", alt = "${alt}"></li>`;
+}
+);
+console.log(item);
+
+ulEl.insertAdjacentHTML('afterbegin', item);
+
+
+
+
+
+
 
 
 // images.forEach(({url,alt}, i, images) => {
@@ -27,28 +43,3 @@ const ulEl = document.querySelector('ul');
 //   liEl.appendChild(imgEl);
 //   ulEl.appendChild(liEl);
 // })
-
-
-const item = images.map(({ url, alt }) => {
-  return `<li><img src = ${url}, alt = ${alt}> </li>`
- 
-}
-);
-
-  
-  
-
-
-ulEl.insertAdjacentHTML('afterbegin', item);
-ulEl.style.display = "flex";
-ulEl.style.flexDirection = "row";
-
-// const item = images.map(image => {
-//   return (imgEl.alt = image.alt);
-  
- 
-// }
-
-// )
-console.log(item)
-

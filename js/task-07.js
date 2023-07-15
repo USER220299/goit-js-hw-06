@@ -1,14 +1,14 @@
 const input = document.querySelector('#font-size-control');
 const text = document.querySelector('#text');
 console.log(input);
-console.log(text.textContent);
+console.log(text.style.fontSize);
 
-input.addEventListener('click', getSizeText)
+input.addEventListener('input', getSizeText)
 
 
 function getSizeText(event) {
-   
- console.log(event.target.value );
-}
+    const textFontSize = event.target.value + 'px';
+   text.style.fontSize= textFontSize;
+};
    
 

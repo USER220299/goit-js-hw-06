@@ -12,6 +12,4 @@ function getBorderColor(event) {
     } else {
        input.classList.add('invalid');
     }
-    
-
-}
+};
