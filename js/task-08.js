@@ -20,8 +20,7 @@ function onFormSubmit(event ) {
    console.log(formData);
 
     }
-  
-    const reset = form.reset();
+   event.currentTarget.reset()
     
   
 }

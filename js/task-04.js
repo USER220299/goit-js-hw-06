@@ -7,7 +7,7 @@ console.log(increment);
 console.log(value);
 
 let counterValue =0;
-console.log(counterValue);
+
 
 decrement.addEventListener('click', getNegativeNumber)
 function getNegativeNumber() {

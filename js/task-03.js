@@ -22,7 +22,7 @@ const item = images.map(({ url, alt }) => {
   return `<li><img src = "${url}", alt = "${alt}", width ='200', height = '150'></li>`;
 }
 ).join('');
-console.log(item);
+
 
 ulEl.insertAdjacentHTML('afterbegin', item);
 
