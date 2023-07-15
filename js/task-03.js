@@ -19,9 +19,9 @@ ulEl.style.display = "flex";
 ulEl.style.gap = "50px";
 
 const item = images.map(({ url, alt }) => {
-  return `<li><img src = "${url}", alt = "${alt}"></li>`;
+  return `<li><img src = "${url}", alt = "${alt}", width ='200', height = '150'></li>`;
 }
-);
+).join('');
 console.log(item);
 
 ulEl.insertAdjacentHTML('afterbegin', item);
