@@ -29,17 +29,3 @@ ulEl.insertAdjacentHTML('afterbegin', item);
 
 
 
-
-
-
-
-// images.forEach(({url,alt}, i, images) => {
-//   const liEl = document.createElement('li');
-//   const imgEl = document.createElement('img');
-//   imgEl.src = url;
-//   imgEl.alt = alt;
-//   console.log(liEl);
-  
-//   liEl.appendChild(imgEl);
-//   ulEl.appendChild(liEl);
-// })
