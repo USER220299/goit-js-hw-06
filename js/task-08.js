@@ -20,7 +20,10 @@ function onFormSubmit(event ) {
    console.log(formData);
 
     }
-   event.currentTarget.reset()
+    if (email !== '' && password !== ''){
+          event.currentTarget.reset()
+    }
+
     
   
 }
